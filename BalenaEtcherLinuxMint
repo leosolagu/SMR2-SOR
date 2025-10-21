@@ -1,0 +1,15 @@
+flowchart TD
+    A["Inicio"] --> B["Ir al sitio web de balenaEtcher"]
+    B --> C["Descargar balenaEtcher para tu sistema operativo"]
+    C --> D["Instalar balenaEtcher"]
+    D --> E["¿Puedes descargar Linux Mint 22.2?"]
+    E -- Sí --> F["Ir al sitio web de Linux Mint"]
+    F --> G["Descargar la ISO de Linux Mint 22.2"]
+    G --> H["Abrir balenaEtcher"]
+    E -- No --> I["Solicita que te pasen la ISO por pendrive"]
+    I --> H
+    H --> J["Seleccionar la imagen ISO de Linux Mint en balenaEtcher"]
+    J --> K["Inserta un pendrive vacío"]
+    K --> L["Seleccionar el pendrive en balenaEtcher"]
+    L --> M["Hacer clic en 'Flash!' para grabar la ISO"]
+    M --> N["Pendrive booteable de Linux Mint 22.2"]
