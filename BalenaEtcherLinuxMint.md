@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     A["Inicio"] --> B["Ir al sitio web de balenaEtcher"]
     B --> C["Descargar balenaEtcher para tu sistema operativo"]
@@ -13,3 +14,4 @@ flowchart TD
     K --> L["Seleccionar el pendrive en balenaEtcher"]
     L --> M["Hacer clic en 'Flash!' para grabar la ISO"]
     M --> N["Pendrive booteable de Linux Mint 22.2"]
+```
