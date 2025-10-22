@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     I["Inicio: En el escritorio de Windows 10"] --> A["Clic derecho en el escritorio"]
     A --> B["Selecciona Nuevo"]
@@ -10,3 +11,4 @@ flowchart TD
     H --> K["Acceso a todas las herramientas y configuraciones de Windows"]
     F -->|"No"| J["Mantén el nombre exacto y repite el paso"]
     J --> E
+```
