@@ -1,3 +1,4 @@
+```mermaid
 flowchart TD
     A["Inicio"] --> B["Revisar requisitos (Windows 10 2004 o superior)"]
     B --> C["Abrir PowerShell como Administrador"]
@@ -17,3 +18,4 @@ flowchart TD
     N -- Sí --> O["Instala la distribución manualmente desde Microsoft Store"]
     O --> H
     N -- No --> P["Consultar la documentación oficial para otros errores"]
+```
