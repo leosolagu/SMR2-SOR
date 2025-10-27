@@ -1,28 +1,19 @@
-```mermaid
-flowchart TD
-    Start(["Inicio del test: Software necesario para conectarse a Internet"])
-    Q1{"¿Con qué programa puedes visualizar páginas web?"}
-    Q2{"¿Para enviar y recibir e-mails, qué programa necesitas?"}
-    Q3{"¿Qué programa utilizarías para transferir archivos entre tu equipo y un servidor?"}
-    Q4{"¿Qué es necesario para chatear por Internet?"}
-    Q5{"¿Cuál de estos NO es un programa de navegación web?"}
-    Repasa["Repasa el material de la teoría y vuelve a intentarlo"]
-    End(["¡Test superado!"])
+# 2. ACTIVIDADES
 
-    Start --> Q1
-    Q1 -- "Correcto" --> Q2
-    Q1 -- "Incorrecto" --> Repasa
-    Repasa --> Q1
+## 2.1 Monitor de recursos
 
-    Q2 -- "Correcto" --> Q3
-    Q2 -- "Incorrecto" --> Repasa
+### CPU
+<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/20d11b9d-526a-4b82-9a47-f0da9d75f6e3" />
 
-    Q3 -- "Correcto" --> Q4
-    Q3 -- "Incorrecto" --> Repasa
+### Memoria
+<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/b46ce134-8713-4179-ad2c-c1cb3033d12c" />
 
-    Q4 -- "Correcto" --> Q5
-    Q4 -- "Incorrecto" --> Repasa
+### Disco
+<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/80c3f357-4214-4de9-bed5-ff417f24f2ff" />
 
-    Q5 -- "Correcto" --> End
-    Q5 -- "Incorrecto" --> Repasa
-```
+### Red
+<img width="250" height="250" alt="image" src="https://github.com/user-attachments/assets/d7f3b96c-456c-4d0e-b9a9-80abb269127c" />
+
+## 2.2 Contadores
+
+<img width="1920" height="1080" alt="Captura de pantalla 2025-10-27 222351" src="https://github.com/user-attachments/assets/90c0f618-bdb6-4046-87d3-d020e525d594" />
