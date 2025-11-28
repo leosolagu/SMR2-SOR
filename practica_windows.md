@@ -1,4 +1,4 @@
-# Práctica Completa de Administración Windows Server 2019 + Windows 10
+# Actividades de aplicación
 
 ## 2.21. Modificar colores de PowerShell, título y prompt
 
