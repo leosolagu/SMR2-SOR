@@ -1,12 +1,8 @@
 # Práctica: Actividades 2.52 – 2.56
 
-> **Resumen:** Este documento explica paso a paso las actividades 2.52 a 2.56. Donde hace falta información de internet (ejemplos y novedades) se han buscado y citan las fuentes.
-
----
-
 ## 2.52 — Ejemplos de dominios internacionalizados (IDN)
 
-**Qué son (resumen):**  
+**Qué son:** 
 Los *Internationalized Domain Names* (IDN) son dominios que contienen caracteres fuera del conjunto ASCII (por ejemplo: ñ, á, ü, caracteres cirílicos, chinos, árabes, etc.). Internamente se codifican en ASCII usando **Punycode** y se representan en DNS con el prefijo `xn--`. (Ver fuentes).  
 
 **Ejemplos reales y su forma Punycode (ejemplos para probar):**
@@ -15,17 +11,8 @@ Los *Internationalized Domain Names* (IDN) son dominios que contienen caracteres
 - `tølløse.dk` → `xn--tllse-vuac.dk` (ejemplo con ø).  
 - `测试假域名.com` → `xn--sxqv5g23dyr3a428a.com` (ejemplo con caracteres chinos).  
 
-**Cómo comprobar / convertir:**  
-- Usa un conversor Punycode (por ejemplo: punycoder.com) para obtener la forma `xn--...`.  
-- En el navegador moderno puedes escribir el dominio en Unicode; el navegador lo convertirá a Punycode para la resolución DNS.  
-
-**Dónde leer más (fuentes):** artículo general sobre IDN y Punycode y ejemplos.  
-
----
-
 ## 2.53 — Ventajas y novedades de Windows Server 2019 (comparado con 2016 y anteriores)
 
-**Resumen de los puntos clave (resumido):**
 1. **Nube híbrida y Azure integration** — mejoras para conectar servicios on‑premises con Azure (Azure Network Adapter, almacenamiento híbrido, Azure Backup/DR).  
 2. **Seguridad** — Windows Defender Advanced Threat Protection (ATP) integrado, características de protección mejoradas y Windows Defender Exploit Guard.  
 3. **Mejoras en HCI (Hyper-Converged Infrastructure) y Storage Spaces Direct** — mayor escalabilidad y rendimiento (mejor monitorización desde Windows Admin Center).  
@@ -33,11 +20,6 @@ Los *Internationalized Domain Names* (IDN) son dominios que contienen caracteres
 5. **Windows Admin Center** — nueva consola web para administración y monitorización local y remota.  
 6. **Rendimiento y límites ampliados** — mejoras en almacenamiento máximo y rendimiento en escenarios HCI.  
 
-**Recomendación:** revisa la documentación oficial para detalles y notas de versión antes de desplegar en producción.  
-
-**Fuentes oficiales y resumen técnico:** documentación "What's new in Windows Server 2019" y guía en MS Learn.
-
----
 
 ## 2.54 — Instalar un servidor web (IIS) en el servidor y comprobar desde un cliente Windows 10
 
@@ -118,25 +100,5 @@ New-NetFirewallRule -DisplayName "IIS HTTP" -Direction Inbound -Protocol TCP -Lo
    - Monta y generaliza la imagen con `sysprep /generalize` y luego captura con WDS para crear una imagen lista para desplegar.
 6. **Comprobar conectividad y dominio:** unir `Cliente3` al dominio si es necesario y verificar acceso.
 
----
 
-## Capturas / Imágenes
-- Se recomienda incluir capturas de cada paso: instalación de roles, la página IIS desde el cliente, resultados de PowerShell y los instaladores del software.  
-- En el repositorio GitHub coloca la carpeta `images/` y nombra las capturas como `2.54_iis_server.png`, `2.55_powershell_ex1.png`, `2.56_cliente3_install.png`, etc.
-
----
-
-## Entrega
-Sube a tu repositorio GitHub:
-- Este fichero `practica_2_52_2_56.md`.  
-- Carpeta `images/` con capturas.  
-- Un ZIP opcional con scripts `.ps1` usados.
-
----
-
-## Fuentes (consultadas)
-- Definición y ejemplos de IDN / Punycode. citeturn0search0turn0search8  
-- Documentación oficial: *What's new in Windows Server 2019* (Microsoft). citeturn0search1turn0search3  
-- PowerShell – Documentación oficial (MS Learn). citeturn1search0  
-- Instalación de IIS y procedimientos comunes (MS Learn / ServerFault). citeturn2search6turn2search12
 
